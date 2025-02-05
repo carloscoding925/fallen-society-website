@@ -1,5 +1,6 @@
 {
   "name": "fallen-society",
+  "version": "1.0.0",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -19,6 +20,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.7.4",
     "@remix-run/dev": "^2.15.3",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
