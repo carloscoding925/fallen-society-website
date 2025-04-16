@@ -5,6 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        custom: ['BrokenDetroit', 'sans-serif'],
         sans: [
           "Inter",
           "ui-sans-serif",
