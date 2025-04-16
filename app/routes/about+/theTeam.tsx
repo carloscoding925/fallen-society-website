@@ -1,7 +1,7 @@
 export default function Component() {
     return (
         <div>
-            <div className="flex flex-row place-content-center w-full">
+            <div className="flex flex-row place-content-center w-full text-white">
                 <div className="w-2/3 pt-4">
                     <div className="flex flex-row place-content-center w-full">
                         <h1 className="text-xl font-bold">
