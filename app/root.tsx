@@ -26,7 +26,7 @@ export default function Component() {
         <div className="shrink-0">
           <Header />
         </div>
-        <div className="flex flex-1">
+        <div className="flex flex-1 bg-black">
           <Outlet />
         </div>
         <div className="shrink-0">

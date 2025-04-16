@@ -14,7 +14,7 @@ export function Footer() {
                 <div className="flex flex-row justify-center w-full text-white">
                     <div className="flex flex-col justify-center h-full">
                         <h1 className="text-sm font-bold font-serif">
-                            Version {packageJson.version}
+                            v{packageJson.version}
                         </h1>
                     </div>
                 </div>
