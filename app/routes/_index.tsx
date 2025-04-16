@@ -54,7 +54,7 @@ export default function Component() {
       <div className="bg-[url('/images/islandMap.png')] bg-contain bg-center min-h-screen">
         <div className="flex flex-col place-content-center w-full h-screen">
           <div className="flex flex-row place-content-center w-full pt-4">
-            <h1 className="text-6xl text-red-800 font-custom fly-up-animation" style={{ animationDelay: '0.3s' }}>
+            <h1 className="text-6xl text-red-900 font-custom fly-up-animation" style={{ animationDelay: '0.3s' }}>
               Welcome to Fallen Society
             </h1>
           </div>
