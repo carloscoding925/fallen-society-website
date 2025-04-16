@@ -3,7 +3,7 @@ import { Link } from "@remix-run/react";
 export function Header() {
     return (
         <div className="">
-            <header className="flex flex-row bg-black h-[130px] text-white">
+            <header className="flex flex-row bg-black h-[130px] text-white pb-1">
                 <div className="flex flex-row justify-start w-full">
                     <div className="flex flex-col justify-end h-full">
                         <h1 className="text-5xl text-red-600 font-custom pb-2 pl-2">
@@ -16,6 +16,13 @@ export function Header() {
                         <h1 className="text-2xl font-custom transition-transform duration-300 hover:-translate-y-2 hover:text-red-600">
                             <Link to="/">
                                 Home
+                            </Link>
+                        </h1>
+                    </div>
+                    <div className="flex flex-col justify-end h-full">
+                        <h1 className="text-2xl font-custom transition-transform duration-300 hover:-translate-y-2 hover:text-red-600">
+                            <Link to="/">
+                                News
                             </Link>
                         </h1>
                     </div>

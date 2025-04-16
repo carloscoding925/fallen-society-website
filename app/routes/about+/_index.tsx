@@ -1,7 +1,7 @@
 export default function Component() {
     return (
         <div>
-            <div className="flex flex-row place-content-center">
+            <div className="flex flex-row place-content-center text-white">
                 <div className="w-2/3 pt-4">
                     <div className="flex text-wrap">
                         Fallen Society is a post-apocalyptic third-person survival game that propels the player into a perilous island environment booming with mystery. 

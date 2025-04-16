@@ -6,21 +6,21 @@ export default function Component() {
             <div className="flex flex-row w-full pt-4">
                 <div className="w-full flex flex-row justify-center place-content-center space-x-4">
                     <div className="">
-                        <h1 className="text-xl font-bold underline text-black transition-transform duration-300 hover:-translate-y-2 hover:text-blue-500">
+                        <h1 className="text-xl font-bold underline text-white transition-transform duration-300 hover:-translate-y-2 hover:text-blue-500">
                             <Link to="/about">
                                 The Project
                             </Link>
                         </h1>
                     </div>
                     <div className="">
-                        <h1 className="text-xl font-bold underline text-black transition-transform duration-300 hover:-translate-y-2 hover:text-blue-500">
+                        <h1 className="text-xl font-bold underline text-white transition-transform duration-300 hover:-translate-y-2 hover:text-blue-500">
                             <Link to="/about/theTeam">
                                 Meet the Team
                             </Link>
                         </h1>
                     </div>
                     <div className="">
-                        <h1 className="text-xl font-bold underline text-black transition-transform duration-300 hover:-translate-y-2 hover:text-blue-500">
+                        <h1 className="text-xl font-bold underline text-white transition-transform duration-300 hover:-translate-y-2 hover:text-blue-500">
                             <Link to="/about/resources">
                                 Resources
                             </Link>
