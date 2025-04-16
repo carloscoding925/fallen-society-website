@@ -1,3 +1,5 @@
+import packageJson from '../../package.json'
+
 export function Footer() {
     return (
         <div className="">
@@ -6,6 +8,13 @@ export function Footer() {
                     <div className="flex flex-col justify-center h-full">
                         <h1 className="text-xl font-bold font-serif">
                             Made With ❤️ By Team 10
+                        </h1>
+                    </div>
+                </div>
+                <div className="flex flex-row justify-center w-full text-white">
+                    <div className="flex flex-col justify-center h-full">
+                        <h1 className="text-sm font-bold font-serif">
+                            Version {packageJson.version}
                         </h1>
                     </div>
                 </div>
