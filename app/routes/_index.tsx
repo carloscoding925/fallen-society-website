@@ -1,4 +1,34 @@
+import { useEffect, useRef } from "react";
+
 export default function Component() {
+  const contentRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer: IntersectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fly-up-animation');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (contentRef.current) {
+      observer.observe(contentRef.current);
+    }
+
+    return () => {
+      if (contentRef.current) {
+        observer.unobserve(contentRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div>
       <style>{`
@@ -28,10 +58,10 @@ export default function Component() {
         </div>
       </div>
 
-      <div className="py-8 text-white">
+      <div ref={contentRef} className="py-8 text-white hidden-initially">
         <div className="flex flex-row w-full pl-8">
           <div className="flex flex-row w-1/2 justify-start pl-8">
-            <img src="/images/snowMap.png" alt="Logo" className="w-full" />
+            <img src="/images/snowMap.png" alt="Fallen Society Snow Demo Map" className="w-full" />
           </div>
           <div className="flex flex-row w-1/2 justify-end pr-8">
             <div className="flex flex-col space-y-4 items-center">
