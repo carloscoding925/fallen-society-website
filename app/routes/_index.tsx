@@ -43,7 +43,7 @@ export default function Component() {
           }
         }
         .fly-up-animation {
-          animation: flyUp 3s ease-out forwards;
+          animation: flyUp 2s ease-out forwards;
         }
         .hidden-initially {
           opacity: 0;

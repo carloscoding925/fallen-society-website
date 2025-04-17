@@ -21,7 +21,7 @@ export function Header() {
                     </div>
                     <div className="flex flex-col justify-end h-full">
                         <h1 className="text-3xl font-custom transition-transform duration-300 hover:-translate-y-2 hover:text-red-900">
-                            <Link to="/">
+                            <Link to="/news">
                                 News
                             </Link>
                         </h1>
