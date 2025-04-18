@@ -21,7 +21,7 @@ export default function Component() {
                                 The maps are designed to be visually stunning, with a variety of biomes and environments that players can explore and that add to the game's
                                 storyline. Navigate through lust forests or frozen tundras, and discover the secrets hidden within each map. Players will begin their
                                 journey constrained to a small area, where they must kill enemies, complete objectives, and collect items in order to progress and 
-                                unlock new areas.
+                                unlock new areas. Players will also be able to interact with the environment, using items to solve puzzles and unlock new areas.
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,11 @@ export default function Component() {
                             </h1>
                             <div className="flex text-wrap px-8 pt-4">
                                 Our game features a dynamic combat system that allows players to engage in fast-paced, action-packed battles with a variety of enemies.
-                                Players will have access to a wide range of weapons ranging from swords to cooking pans to staffs, all with their own drawbacks and benefits. 
+                                Enemies will spawn in waves, with each wave becoming progressively more difficult. Players will have to use their skills and strategy to defeat enemies,
+                                utilizing a variety of weapons to gain the upper hand. As players progress through the game, enemies will become more challenging and they will spawn in 
+                                larger numbers. Players will also have access to a wide range of weapons ranging from swords to cooking pans to staffs, all with their own drawbacks 
+                                and benefits. Players will need to be mindful of their health, as health regeneration is slow and players will need to rely on items in order to heal
+                                faster from damage. 
                             </div>
                         </div>
                     </div>
