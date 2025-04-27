@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 export default function Component() {
   const contentRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
+  const videoRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer: IntersectionObserver = new IntersectionObserver(
@@ -25,6 +26,32 @@ export default function Component() {
     return () => {
       if (contentRef.current) {
         observer.unobserve(contentRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer: IntersectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fly-up-animation');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
       }
     };
   }, []);
@@ -90,6 +117,18 @@ export default function Component() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div ref={videoRef} className="flex flex-row w-full justify-center mt-12 mb-8">
+        <div className="w-3/4 aspect-video">
+          <iframe 
+              className="w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/skCwMZEmenY?autoplay=1&mute=0" 
+              title="Fallen Society Trailer"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen>
+          </iframe>
         </div>
       </div>
     </div>

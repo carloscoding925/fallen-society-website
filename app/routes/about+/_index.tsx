@@ -67,7 +67,12 @@ export default function Component() {
                         and mission system aims to create a fresh but recognizable experience. Built in Unreal Engine 5, Fallen Society implements key features of the engine such 
                         as megascans, locomotion, and procedural content generation in order to deliver an immersive and engaging adventure.
                     </div>
-                    <div className="flex flex-row w-full pt-12 pb-6">
+                    <div className="flex flex-row place-content-center pt-8">
+                        <h1 className="text-2xl">
+                            <a href="https://github.com/Hughes-Tristan/capstone_project_2024" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 font-custom">See the Code Here!</a>
+                        </h1>
+                    </div>
+                    <div className="flex flex-row w-full pt-4 pb-6">
                         <img src="/images/snowMap.png" alt="Fallen Society Snow Demo Map" className="w-full" />
                     </div>
                 </div>
