@@ -31,7 +31,9 @@ export default function Component() {
                         <div className="flex flex-row w-1/2 justify-end pl-8">
                             <div className="flex flex-col w-full space-y-4 items-center">
                                 <h1 className="text-3xl font-custom">
-                                    Carlos Hernandez
+                                    <a href="https://linkedin.com/in/carlos-hernandez-1852792ab" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+                                        Carlos Hernandez
+                                    </a>
                                 </h1>
                                 <div className="flex text-wrap px-8 pt-4">
                                     Hello, my name is Carlos Hernandez & I am a senior here at UNR studying Computer Science. My main interests
